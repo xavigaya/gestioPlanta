@@ -61,7 +61,7 @@ class RoturesPaperController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function sendEmailReminder(Request $request, )
+    public function sendEmailReminder(Request $request)
     {
         $user = User::findOrFail($id);
 
