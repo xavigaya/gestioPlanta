@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTechDatasTable extends Migration
+class CreateConCompanyTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,15 +12,14 @@ class CreateTechDatasTable extends Migration
      */
     public function up()
     {
-        Schema::create('tech_datas', function (Blueprint $table) {
+        Schema::create('con_company', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('idpubli');
-            $table->string('plantilla');
-            $table->string('observacions');
-            $table->integer('idfilmacio');
-            $table->integer('identrada');
-            $table->string('slug');
             $table->timestamps();
+            $table->string('name');
+            $table->string('address');
+            $table->string('phone');
+            $table->string('fax');
+            $table->string('slug');
         });
     }
 
@@ -31,6 +30,6 @@ class CreateTechDatasTable extends Migration
      */
     public function down()
     {
-        Schema::drop('tech_datas');
+        Schema::drop('con_company');
     }
 }

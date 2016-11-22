@@ -9,7 +9,7 @@
             <span class="icon-bar" ></span>
             </button>
             <img src="/img/ico_lerigraf.png" alt="Icono Logo Lerigraf" width="40px" />
-            <a class="navbar-brand" href="/" ><strong>Lerigraf</strong> Gestió Dades</a>
+            <a class="navbar-brand" href="/" ><strong>Lerigraf</strong> Gestió Planta</a>
         </div>
         
         
@@ -29,9 +29,15 @@
                         <li><a href="/rotures/create" > Afegir Rotures </a></li>
                     </ul>
                 </li>
-                <li><a href="/customers" > Clients </a></li>
-                <li><a href="/publications" > Publicacions </a></li>
-                <li><a href="/people" > Contactes </a></li>
+                <li class="dropdown" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" > Contactes <span class="caret" ></span></a>
+                    <ul class="dropdown-menu" role="menu" >
+                        <li><a href="/contacts" > Llistat Contactes </a></li>
+                        <li><a href="/contacts/create" > Afegir Contacte </a></li>
+                    </ul>
+                </li>
+                    
+                
                 <li class="dropdown" >
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" > Member <span class="caret" ></span></a>
                 <ul class="dropdown-menu" role="menu" >
